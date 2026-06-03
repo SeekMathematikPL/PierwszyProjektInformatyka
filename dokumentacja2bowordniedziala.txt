@@ -2,3 +2,4 @@
 Cel:  Spróbować zrobić grę Snake. Ewentualnie jeśli to okaże się zbyt trudne to statki.
 02.06.2026.- udało mi się ogarnąć github na moim laptopie, przeanalizowałam w jaki sposób chce wykonać mój projekt, usiłuję stworzyć planszę do gry (google nie pomógł)
 P.S word ze mną nie współpracuje
+03.06.2026. - dalej usiłuje utworzyć planszę do gry (coś tam powoli powstaje ale to dalej nie to), szukam informacji na temat instrukcji switch

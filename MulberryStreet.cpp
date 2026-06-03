@@ -1,13 +1,24 @@
 #include <iostream>
 using namespace std;
-int t [20][20];
+int t [10][10];
 int main (){
     cout << "Autor: Agnieszka Wlodarczyk 1a nr23" << endl;
     cout << "Gra: Snake" << endl;
     cout << "Sposob uzycia: klawisze w,a,s,d aby sie poruszac." << endl;
+    int licznikpunktow=0;
+    int zero=0;
+    for (int i=0;i<10;i++){
+        for (int g=0;g<10;g++){
+            if (t[i][g]==t[zero][g])
+                cout << "=";
+        }
+    }
+    //P.S mamy czas do konca roku szkolnego ale oceny beda we wrzesniu wiec w sumie to mam cale wakacje jeszczee
+    //notka dla mnie: pierwszy kawalek planszy zbyt dlugi: znajdz sposob w domu aby bylo krocej (gora planszy)
+
  //notatka dla mnie:
  //co musi tu jeszcze powstac:
- //1.plansza
+ //1.plansza-zaczelam prace nad tym
  //2.jablka
  //3.waz
  //4.cialo weza
