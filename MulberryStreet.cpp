@@ -1,6 +1,14 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 int t [20][20];
+int jabko3=10;
+int jabko2=10;
+void jabko(){
+    jabko2 = rand() % 20;
+    jabko3 = rand() % 20;
+}
 int main ()
 {
     cout << "Autor: Agnieszka Wlodarczyk 1a nr23" << endl;
@@ -11,6 +19,13 @@ int main ()
     long long krzysiugdziejestes1=9;
     long long krzysiugdziejestes2=9;
     char ruch;
+ srand(time(nullptr));
+
+    jabko();
+if (jabko2==9 && jabko3==9){
+     srand(time(nullptr));
+     jabko();
+}
     for(int w=0;w<20;w++){
         for(int k=0;k<20;k++){
                 if (w==0 || w==19) {
@@ -21,9 +36,12 @@ int main ()
          }
          else if (w==krzysiugdziejestes1 && k==krzysiugdziejestes2)
             cout << "+";
+        else if (w==jabko2 && k==jabko3)
+            cout << "@";
 
         else
             cout << " ";
+
         }
         cout << endl;
     }
