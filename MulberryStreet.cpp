@@ -6,8 +6,8 @@ int t [20][20];
 int jabko3=10;
 int jabko2=10;
 void jabko(){
-    jabko2 = rand() % 20;
-    jabko3 = rand() % 20;
+    jabko2 = rand() % 18 +1;
+    jabko3 = rand() % 18 +1;
 }
 int main ()
 {
@@ -55,6 +55,11 @@ if (krzysiugdziejestes1 <= 0 || krzysiugdziejestes1 >= 19 ||
     przegranalubwygrana = 2;
     break;
 }
+if (krzysiugdziejestes1==jabko2 && krzysiugdziejestes2==jabko3 || krzysiugdziejestes1==jabko3 && krzysiugdziejestes2==jabko2){
+    licznikpunktow++;
+    srand(time(nullptr));
+    jabko();
+}
 
                 for(int w=0;w<20;w++){
         for(int k=0;k<20;k++){
@@ -68,6 +73,9 @@ if (krzysiugdziejestes1 <= 0 || krzysiugdziejestes1 >= 19 ||
          else if (w==krzysiugdziejestes1 && k==krzysiugdziejestes2){
             cout << "+";
          }
+         else if (w==jabko2 && k==jabko3)
+            cout << "@";
+
 
         else
             cout << " ";
@@ -85,6 +93,11 @@ if (krzysiugdziejestes1 <= 0 || krzysiugdziejestes1 >= 19 ||
     przegranalubwygrana = 2;
     break;
 }
+if (krzysiugdziejestes1==jabko2 && krzysiugdziejestes2==jabko3 || krzysiugdziejestes1==jabko3 && krzysiugdziejestes2==jabko2){
+    licznikpunktow++;
+    srand(time(nullptr));
+    jabko();
+}
 
                 for(int w=0;w<20;w++){
         for(int k=0;k<20;k++){
@@ -98,6 +111,9 @@ if (krzysiugdziejestes1 <= 0 || krzysiugdziejestes1 >= 19 ||
             cout << "+";
 
          }
+         else if (w==jabko2 && k==jabko3)
+            cout << "@";
+
 
         else
             cout << " ";
@@ -114,6 +130,11 @@ if (krzysiugdziejestes1 <= 0 || krzysiugdziejestes1 >= 19 ||
     przegranalubwygrana = 2;
     break;
 }
+if (krzysiugdziejestes1==jabko2 && krzysiugdziejestes2==jabko3 || krzysiugdziejestes1==jabko3 && krzysiugdziejestes2==jabko2){
+    licznikpunktow++;
+    srand(time(nullptr));
+    jabko();
+}
 
                      for(int w=0;w<20;w++){
         for(int k=0;k<20;k++){
@@ -127,6 +148,9 @@ if (krzysiugdziejestes1 <= 0 || krzysiugdziejestes1 >= 19 ||
             cout << "+";
 
          }
+         else if (w==jabko2 && k==jabko3)
+            cout << "@";
+
 
         else
             cout << " ";
@@ -142,6 +166,11 @@ if (krzysiugdziejestes1 <= 0 || krzysiugdziejestes1 >= 19 ||
     przegranalubwygrana = 2;
     break;
 }
+if (krzysiugdziejestes1==jabko2 && krzysiugdziejestes2==jabko3 || krzysiugdziejestes1==jabko3 && krzysiugdziejestes2==jabko2){
+    licznikpunktow++;
+    srand(time(nullptr));
+    jabko();
+}
 
                      for(int w=0;w<20;w++){
         for(int k=0;k<20;k++){
@@ -155,6 +184,9 @@ if (krzysiugdziejestes1 <= 0 || krzysiugdziejestes1 >= 19 ||
             cout << "+";
 
          }
+         else if (w==jabko2 && k==jabko3)
+            cout << "@";
+
 
         else
             cout << " ";
@@ -174,16 +206,16 @@ if (krzysiugdziejestes1 <= 0 || krzysiugdziejestes1 >= 19 ||
 
 
     //P.S mamy czas do konca roku szkolnego ale oceny beda we wrzesniu wiec w sumie to mam cale wakacje jeszczee
-    //P.S musisz znalezc w jaki sposob losowac liczby od 0 do 19 - potrzbne do jablek
+
 
  //notatka dla mnie:
  //co musi tu jeszcze powstac:
  //1.plansza-zrobione
- //2.jablka
+ //2.jablka-zrobione w polowie
  //3.waz-sama glowa
  //4.cialo weza
  //5.petla dzieki ktorej by gra dzialala-prawie jest, po czêœci
- //6.to ze jak waz wjedzie w sciane lub zzajmie cala plansze to gra sie konczy-zrobione
+ //6.to ze jak waz wjedzie w sciane lub zzajmie cala plansze to gra sie konczy-zrobione w polowie
  //P.S moze trzeba bylo wybrac cos latwiejszego...?
 }
 
