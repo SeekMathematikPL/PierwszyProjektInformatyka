@@ -1,3 +1,4 @@
+//nie gotowe
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
