@@ -4,6 +4,14 @@
 #include <ctime>
 using namespace std;
 char t[3][3];
+void plansza(){
+   cout << t[0][0] << " | " << t[0][1] << " | " << t[0][2] << endl;
+ cout << "----------" << endl;
+cout << t[1][0] << " | " << t[1][1] << " | " << t[1][2] << endl;
+cout << "----------" << endl;
+cout << t[2][0] << " | " << t[2][1] << " | " << t[2][2] << endl;
+cout << endl;
+}
 int main ()
 {
     int tocousernapisze=0;
@@ -22,29 +30,19 @@ int main ()
  t[2][0]='7';
  t[2][1]='8';
  t[2][2]='9';
- cout << t[0][0] << " | " << t[0][1] << " | " << t[0][2] << endl;
- cout << "----------" << endl;
-cout << t[1][0] << " | " << t[1][1] << " | " << t[1][2] << endl;
-cout << "----------" << endl;
-cout << t[2][0] << " | " << t[2][1] << " | " << t[2][2] << endl;
-cout << endl;
+plansza();
 do{
 cin >> tocousernapisze;
 if (tocousernapisze==1){
         t[0][0]='X';
- cout << t[0][0] << " | " << t[0][1] << " | " << t[0][2] << endl;
- cout << "----------" << endl;
-cout << t[1][0] << " | " << t[1][1] << " | " << t[1][2] << endl;
-cout << "----------" << endl;
-cout << t[2][0] << " | " << t[2][1] << " | " << t[2][2] << endl;
-cout << endl;
+plansza();
 srand(time(nullptr));
-los = 1 + rand() % 9;
-los2 = 1+ rand() %9;
-if (los==0 && los2==0){
+los = rand() % 2;
+los2 = rand() %2;
+if (t[los][los2]=='X' || t[los][los2]=='O'){
   srand(time(nullptr));
-los = 1 + rand() % 9;
-los2 = 1+ rand() %9;
+los =  rand() % 2;
+los2 =  rand() %2;
 }
 for(int w=0;w<3;w++){
         for(int k=0;k<3;k++){
@@ -55,16 +53,13 @@ for(int w=0;w<3;w++){
         }
 
 }
- cout << t[0][0] << " | " << t[0][1] << " | " << t[0][2] << endl;
- cout << "----------" << endl;
-cout << t[1][0] << " | " << t[1][1] << " | " << t[1][2] << endl;
-cout << "----------" << endl;
-cout << t[2][0] << " | " << t[2][1] << " | " << t[2][2] << endl;
-cout << endl;
-
+plansza();
+koniec++;
 
 
 }
+else if (tocousernapisze==2)
+
 
 
 
@@ -72,6 +67,6 @@ cout << endl;
 
 
 }
-while (koniec==0);
+while (koniec!=9);
 
 }

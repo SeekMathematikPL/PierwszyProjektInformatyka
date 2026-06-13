@@ -19,6 +19,9 @@ int main ()
     int przegranalubwygrana=0;
     long long krzysiugdziejestes1=9;
     long long krzysiugdziejestes2=9;
+    int x[400];
+    int y[400];
+    int dlugosc = 1;
     char ruch;
  srand(time(nullptr));
 
@@ -60,6 +63,9 @@ if (krzysiugdziejestes1==jabko2 && krzysiugdziejestes2==jabko3 || krzysiugdzieje
     licznikpunktow++;
     srand(time(nullptr));
     jabko();
+    x[dlugosc]=krzysiugdziejestes1-1;
+    y[dlugosc]=krzysiugdziejestes2;
+    dlugosc++;
 }
 
                 for(int w=0;w<20;w++){
@@ -76,7 +82,8 @@ if (krzysiugdziejestes1==jabko2 && krzysiugdziejestes2==jabko3 || krzysiugdzieje
          }
          else if (w==jabko2 && k==jabko3)
             cout << "@";
-
+         else if(w==x[w] && k==y[k])
+            cout << "o";
 
         else
             cout << " ";
